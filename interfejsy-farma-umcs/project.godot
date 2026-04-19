@@ -11,8 +11,16 @@ config_version=5
 [application]
 
 config/name="Interfejsy_FARMA_UMCS"
+run/main_scene="uid://c1k15ig6s5i8"
 config/features=PackedStringArray("4.6", "Forward Plus")
+boot_splash/image="uid://bx1kvv1b4u84y"
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+mouse_cursor/custom_image="uid://cudfw01y2s6xp"
 
 [physics]
 

@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://c1k15ig6s5i8"]
+
+[ext_resource type="Texture2D" uid="uid://cvspefv0x4lr1" path="res://assets/svg/SVG/instagram-svgrepo-com.svg" id="1_0xm2m"]
+[ext_resource type="FontFile" uid="uid://6phxcbeifnrl" path="res://assets/fonts/Brizel.ttf" id="1_ig7tw"]
+[ext_resource type="FontFile" uid="uid://yllbvyqnla7h" path="res://assets/fonts/Xabakum-JpMKM.otf" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://cu8ps5cecvv3s" path="res://assets/png's/BG/FARMA_godot_.png" id="2_lquwl"]
+[ext_resource type="Texture2D" uid="uid://begojhk73than" path="res://assets/svg/SVG/box.svg" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://capsfkapwb3dw" path="res://assets/svg/SVG/label.svg" id="5_7mycd"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1bvp3"]
+texture = ExtResource("2_lquwl")
+
+[sub_resource type="Theme" id="Theme_lquwl"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1bvp3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_272bh"]
+texture = ExtResource("5_7mycd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5vw27"]
+texture = ExtResource("5_7mycd")
+region_rect = Rect2(0, 0, 101, 28)
+
+[node name="Main" type="Control" unique_id=8321786]
+layout_mode = 3
+anchor_right = 1.667
+anchor_bottom = 1.6790001
+offset_right = -0.3840332
+offset_bottom = -7.9920654
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=1370629540]
+top_level = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35104167
+anchor_top = 0.24074075
+anchor_right = 1.521875
+anchor_bottom = 1.0388889
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_h2yge")
+theme_override_font_sizes/font_size = 430
+text = "FARMA"
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="." unique_id=546934395]
+visibility_layer = 0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_1bvp3")
+
+[node name="info1" type="TextureButton" parent="." unique_id=1389079490]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.86190945
+anchor_top = 0.80563676
+anchor_right = 0.9431627
+anchor_bottom = 0.84013224
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_lquwl")
+texture_normal = ExtResource("3_h2yge")
+metadata/_edit_use_anchors_ = true
+
+[node name="info2" type="TextureButton" parent="." unique_id=1523213178]
+top_level = true
+material = SubResource("CanvasItemMaterial_1bvp3")
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.1802083
+anchor_top = 1.3351852
+anchor_right = 1.3572917
+anchor_bottom = 1.4666667
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_h2yge")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="." unique_id=1979000900]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6781521
+anchor_top = 0.53968763
+anchor_right = 0.92378694
+anchor_bottom = 0.763352
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_ig7tw")
+theme_override_font_sizes/font_size = 200
+theme_override_styles/normal = SubResource("StyleBoxTexture_272bh")
+text = "START"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="." unique_id=173251187]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7281541
+anchor_top = 0.8445833
+anchor_right = 0.90691125
+anchor_bottom = 1.0671349
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_ig7tw")
+theme_override_font_sizes/font_size = 199
+theme_override_styles/normal = SubResource("StyleBoxTexture_5vw27")
+text = "EXIT"
+metadata/_edit_use_anchors_ = true
+
+[node name="IG" type="TextureButton" parent="." unique_id=1509029132]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2919.9998
+offset_top = 1528.0
+offset_right = 519.74365
+offset_bottom = 522.6719
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.295, 0.295)
+texture_normal = ExtResource("1_0xm2m")

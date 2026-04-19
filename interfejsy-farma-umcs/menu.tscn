@@ -1,23 +1,10 @@
 [gd_scene format=3 uid="uid://cc6yhmqnfm04i"]
 
-[ext_resource type="Texture2D" uid="uid://rju3u3ylo5vw" path="res://icon.svg" id="1_lti8b"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ouk20"]
-atlas = ExtResource("1_lti8b")
-region = Rect2(0, 0, 125, 128)
-
-[node name="Node" type="Node" unique_id=1543665910]
-
-[node name="TextureButton" type="TextureButton" parent="." unique_id=573568955]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+[node name="Main" type="Control" unique_id=8321786]
+layout_mode = 3
+anchor_right = 1.667
+anchor_bottom = 1.6790001
+offset_right = -0.3840332
+offset_bottom = -7.9920654
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = SubResource("AtlasTexture_ouk20")
