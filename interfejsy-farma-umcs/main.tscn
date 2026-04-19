@@ -1,25 +1,25 @@
 [gd_scene format=3 uid="uid://c1k15ig6s5i8"]
 
 [ext_resource type="Texture2D" uid="uid://cvspefv0x4lr1" path="res://assets/svg/SVG/instagram-svgrepo-com.svg" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://hulrlde64c3t" path="res://main.gd" id="1_7mycd"]
 [ext_resource type="FontFile" uid="uid://6phxcbeifnrl" path="res://assets/fonts/Brizel.ttf" id="1_ig7tw"]
 [ext_resource type="FontFile" uid="uid://yllbvyqnla7h" path="res://assets/fonts/Xabakum-JpMKM.otf" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://cu8ps5cecvv3s" path="res://assets/png's/BG/FARMA_godot_.png" id="2_lquwl"]
-[ext_resource type="Texture2D" uid="uid://begojhk73than" path="res://assets/svg/SVG/box.svg" id="3_h2yge"]
-[ext_resource type="Texture2D" uid="uid://capsfkapwb3dw" path="res://assets/svg/SVG/label.svg" id="5_7mycd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lquwl"]
+font_size = 140
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1bvp3"]
 texture = ExtResource("2_lquwl")
 
-[sub_resource type="Theme" id="Theme_lquwl"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+bg_color = Color(0.105882354, 0.26666668, 0.52156866, 1)
+corner_detail = 10
+shadow_color = Color(0.81, 0.81, 0.81, 0.7529412)
+shadow_size = 11
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1bvp3"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_272bh"]
-texture = ExtResource("5_7mycd")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5vw27"]
-texture = ExtResource("5_7mycd")
-region_rect = Rect2(0, 0, 101, 28)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lquwl"]
+bg_color = Color(0.101960786, 0.47843137, 0.36078432, 1)
 
 [node name="Main" type="Control" unique_id=8321786]
 layout_mode = 3
@@ -29,20 +29,23 @@ offset_right = -0.3840332
 offset_bottom = -7.9920654
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.5992704, 0.5998951)
+script = ExtResource("1_7mycd")
 
 [node name="Label" type="Label" parent="." unique_id=1370629540]
 top_level = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 1.0510417
-anchor_top = 0.17962962
-anchor_right = 1.6364583
-anchor_bottom = 0.5796296
+anchor_left = 0.5928819
+anchor_top = 0.07098766
+anchor_right = 0.97256935
+anchor_bottom = 0.28703704
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_h2yge")
-theme_override_font_sizes/font_size = 215
 text = "FARMA"
+label_settings = SubResource("LabelSettings_lquwl")
+horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="." unique_id=546934395]
@@ -54,78 +57,47 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_1bvp3")
 
-[node name="info1" type="TextureButton" parent="." unique_id=1389079490]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2086582914]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.86190945
-anchor_top = 0.80563676
-anchor_right = 0.9431627
-anchor_bottom = 0.84013224
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_lquwl")
-texture_normal = ExtResource("3_h2yge")
+anchor_left = 0.66487104
+anchor_top = 0.49517733
+anchor_right = 0.9038769
+anchor_bottom = 0.75355834
 metadata/_edit_use_anchors_ = true
 
-[node name="info2" type="TextureButton" parent="." unique_id=1523213178]
-top_level = true
-material = SubResource("CanvasItemMaterial_1bvp3")
-clip_contents = true
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 1.1802083
-anchor_top = 1.3351852
-anchor_right = 1.3572917
-anchor_bottom = 1.4666667
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = ExtResource("3_h2yge")
-metadata/_edit_use_anchors_ = true
-
-[node name="Button" type="Button" parent="." unique_id=1979000900]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.6825273
-anchor_top = 0.29265535
-anchor_right = 0.9281621
-anchor_bottom = 0.51631963
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=1979000900]
+layout_mode = 2
+size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("1_ig7tw")
 theme_override_font_sizes/font_size = 100
-theme_override_styles/normal = SubResource("StyleBoxTexture_272bh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
 text = "START"
 metadata/_edit_use_anchors_ = true
 
-[node name="Button2" type="Button" parent="." unique_id=173251187]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.70940334
-anchor_top = 0.5163197
-anchor_right = 0.8881605
-anchor_bottom = 0.7388713
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Exit" type="Button" parent="VBoxContainer" unique_id=173251187]
+layout_mode = 2
+size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("1_ig7tw")
 theme_override_font_sizes/font_size = 100
-theme_override_styles/normal = SubResource("StyleBoxTexture_5vw27")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lquwl")
 text = "EXIT"
 metadata/_edit_use_anchors_ = true
 
 [node name="IG" type="TextureButton" parent="." unique_id=1509029132]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 2919.9998
-offset_top = 1528.0
-offset_right = 519.74365
-offset_bottom = 522.6719
+anchors_preset = -1
+anchor_left = 0.94128764
+anchor_top = 0.8890936
+anchor_right = 0.98879075
+anchor_bottom = 0.97366536
+offset_right = 723.99805
+offset_bottom = 723.99805
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.295, 0.295)
+scale = Vector2(0.09500243, 0.09500243)
 texture_normal = ExtResource("1_0xm2m")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
