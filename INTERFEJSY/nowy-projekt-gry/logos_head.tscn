@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://qnybdv8eapke"]
+
+[ext_resource type="Texture2D" uid="uid://2oyq5q7fj3bl" path="res://assets/logos_head.png" id="1_cfpr1"]
+[ext_resource type="Texture2D" uid="uid://b3e8vr6wvad5" path="res://assets/FARMA_tarot_card-09.png" id="2_aiyqn"]
+
+[node name="LogosHead" type="Sprite2D" unique_id=1781107506]
+position = Vector2(1112, 600.00006)
+scale = Vector2(0.023739126, 0.023739127)
+texture = ExtResource("1_cfpr1")
+
+[node name="FarmaTarotCard09" type="Sprite2D" parent="." unique_id=221268835]
+position = Vector2(-21952.008, -14912.096)
+scale = Vector2(3.4327216, 3.4327216)
+texture = ExtResource("2_aiyqn")
